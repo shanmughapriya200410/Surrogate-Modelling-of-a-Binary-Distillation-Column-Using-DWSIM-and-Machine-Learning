@@ -1,6 +1,7 @@
 # Surrogate-Modelling-of-a-Binary-Distillation-Column-Using-DWSIM-and-Machine-Learning
 
- 1. Project Overview
+
+## 1. Project Overview
 This project involves the development of a Machine Learning (ML) surrogate model to approximate a rigorous chemical process simulation. A binary distillation column separating Benzene and Toluene was modeled in **DWSIM**, and the resulting data was used to train various ML regressors to predict distillate purity ($x_D$) based on the Reflux Ratio.
 
 ### Key Objectives:
@@ -36,9 +37,9 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 ### Step 1: DWSIM Simulation (Optional)
 If you wish to view or modify the simulation:
-1. Open DWSIM.
+1. Open **DWSIM**.
 2. Load `dwsim.dwxmz`.
-3. Go to Tools > Sensitivity Analysis to see the parametric sweep setup used to generate the data.
+3. Go to **Tools > Sensitivity Analysis** to see the parametric sweep setup used to generate the data.
 
 ### Step 2: Running the Surrogate Model
 1. Place `distillation_dataset.csv` and `surrogate_model_distillation.py` in the same directory.
@@ -51,21 +52,21 @@ If you wish to view or modify the simulation:
 ---
 
 ## 5. Implementation Details
-Simulation Range:Reflux Ratio was varied from **1.5 to 4.0**.
-Pre-processing: The script handles `latin1` encoding and implements `StandardScaler` for feature normalization.
-Evaluation Metrics: Models are evaluated based on **$R^2$ Score** and **Mean Absolute Error (MAE)**.
-Validation: An 80/20 train-test split was utilized to verify the model's predictive capabilities on unseen data.
+* **Simulation Range:** Reflux Ratio was varied from **1.5 to 4.0**.
+* **Pre-processing:** The script handles `latin1` encoding and implements `StandardScaler` for feature normalization.
+* **Evaluation Metrics:** Models are evaluated based on **$R^2$ Score** and **Mean Absolute Error (MAE)**.
+* **Validation:** An 80/20 train-test split was utilized to verify the model's predictive capabilities on unseen data.
 
 ---
 
 ## 6. Results
-Best Model: Random Forest Regressor.
-Accuracy (R^2):~0.983.
-Observations:The Random Forest model effectively captures the non-linear "S-curve" of the distillation process, whereas Linear Regression fails to account for the asymptotic behavior at high purity levels.
+* **Best Model:** Random Forest Regressor.
+* **Accuracy ($R^2$):** ~0.983.
+* **Observations:** The Random Forest model effectively captures the non-linear "S-curve" of the distillation process, whereas Linear Regression fails to account for the asymptotic behavior at high purity levels.
 
 ---
 
 ## 7. Author
-SHANMUGHA PRIYA  
+**[SHANMUGHA PRIYA]**   
 FOSSEE Fellowship Screening Task
 
