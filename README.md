@@ -15,7 +15,7 @@ This project involves the development of a Machine Learning (ML) surrogate model
 ## 2. File Structure
 * `dwsim.dwxmz`: The converged DWSIM flowsheet file.
 * `distillation_dataset.csv`: The dataset containing 100 simulation points (Reflux Ratio vs. Purity).
-* `surrogate_model_distillation.py`: The Python script for data processing, model training, and visualization.
+* `final_fossee_test.py`: The Python script for data processing, model training, and visualization.
 * `README.md`: This instruction file.
 * `Report.pdf`: Comprehensive technical report.
 * `Results_Summary.pdf`: Concise summary of final metrics and observations.
@@ -42,11 +42,11 @@ If you wish to view or modify the simulation:
 3. Go to **Tools > Sensitivity Analysis** to see the parametric sweep setup used to generate the data.
 
 ### Step 2: Running the Surrogate Model
-1. Place `distillation_dataset.csv` and `surrogate_model_distillation.py` in the same directory.
+1. Place `distillation_dataset.csv` and `final_fossee_test.py` in the same directory.
 2. Open your terminal or IDE (VS Code, PyCharm, etc.).
 3. Run the script:
    ```bash
-   python surrogate_model_distillation.py
+   final_fossee_test.py
    ```
 
 ---
