@@ -1,0 +1,2 @@
+# Surrogate-Modelling-of-a-Binary-Distillation-Column-Using-DWSIM-and-Machine-Learning
+This project involves the development of a Machine Learning (ML) surrogate model to approximate a rigorous chemical process simulation. A binary distillation column separating Benzene and Toluene was modeled in DWSIM, and the resulting data was used to train various ML regressors to predict distillate purity (x_D) based on the Reflux Ratio.
